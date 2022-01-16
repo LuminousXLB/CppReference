@@ -1,6 +1,6 @@
 # Class
 
-## 构造函数
+## 构造函数与析构函数
 
 ### Q1
 
@@ -16,6 +16,54 @@ C. 0 <br>
 D. 10
 
 **Answer**: C
+
+### Q2
+
+``` cpp
+#include <cstring>
+#include <iostream>
+
+using namespace std;
+
+class Person {
+  private:
+    char name[10];
+    int age;
+    static int count;
+
+  public:
+    Person(const char *str = "sjtu", int n = 104);
+    ~Person() {
+        count--;
+        cout << "name=" << name << " count=" << count << endl;
+    }
+};
+
+int Person::count = 10;
+
+Person::Person(const char *str, int n) {
+    strcpy(name, str);
+    age = n;
+    count++;
+}
+
+int main() {
+    Person personArr[2], *p;
+    p = new Person("pku", 102);
+    Person &q = *p;
+    delete p;
+    return 0;
+}
+
+```
+
+**Output**:
+
+```
+name=pku count=12
+name=sjtu count=11
+name=sjtu count=10
+```
 
 ## 静态成员函数
 
