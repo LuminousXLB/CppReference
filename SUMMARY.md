@@ -13,3 +13,7 @@
 ## Exercise
 
 * [Page 3](exercise/page-3.md)
+
+## FAQ
+
+* [Page 4](faq/page-4.md)
