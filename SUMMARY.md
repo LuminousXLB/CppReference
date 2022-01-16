@@ -16,5 +16,7 @@
 
 ## FAQ
 
+* [String](faq/string.md)
+* [Exception](faq/exception.md)
 * [Class](faq/class.md)
 * [OOP](faq/oop.md)
