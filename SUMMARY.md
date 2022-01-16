@@ -16,4 +16,5 @@
 
 ## FAQ
 
-* [Page 4](faq/page-4.md)
+* [Class](faq/class.md)
+* [OOP](faq/oop.md)
